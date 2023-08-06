@@ -48,9 +48,6 @@ export const ProfileCardStatsItem = styled.li`
   gap: 10px;
 `;
 export const ProfileCardStatsLabel = styled.span`
-  ::first-letter {
-    text-transform: uppercase;
-  }
   color: #d3d3d3;
 `;
 export const ProfileCardStatsValue = styled.span`

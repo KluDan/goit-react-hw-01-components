@@ -25,7 +25,9 @@ export const Profile = ({ info }) => {
       <ProfileCardStats>
         {statLabels.map(label => (
           <ProfileCardStatsItem key={label}>
-            <ProfileCardStatsLabel>{label}</ProfileCardStatsLabel>
+            <ProfileCardStatsLabel>
+              {label.charAt(0).toUpperCase() + label.slice(1)}
+            </ProfileCardStatsLabel>
             <ProfileCardStatsValue>{info.stats[label]}</ProfileCardStatsValue>
           </ProfileCardStatsItem>
         ))}
